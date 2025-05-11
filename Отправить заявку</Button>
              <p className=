@@ -1,0 +1,89 @@
+
+                Нажимая на кнопку, вы соглашаетесь с нашей политикой обработки персональных данных
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="container py-12">
+        <h2 className="mb-8 text-center font-playfair text-3xl font-bold">Часто задаваемые вопросы</h2>
+        <div className="mx-auto max-w-3xl space-y-4">
+          <Card>
+            <CardHeader className="py-4">
+              <CardTitle className="text-base font-medium">С какого возраста можно начать обучение вокалу?</CardTitle>
+            </CardHeader>
+            <CardContent className="pb-4 pt-0 text-muted-foreground">
+              <p>Мы принимаем учеников от 5 лет. Для детей младшего возраста используются специальные методики, адаптированные под их возраст. Для взрослых учеников нет возрастных ограничений.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader className="py-4">
+              <CardTitle className="text-base font-medium">Нужны ли какие-то музыкальные навыки для начала обучения?</CardTitle>
+            </CardHeader>
+            <CardContent className="pb-4 pt-0 text-muted-foreground">
+              <p>Нет, мы принимаем учеников с любым уровнем подготовки, включая полных новичков. Наши преподаватели подберут программу под ваш текущий уровень и помогут постепенно развивать навыки.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader className="py-4">
+              <CardTitle className="text-base font-medium">Как долго действительны приобретенные абонементы?</CardTitle>
+            </CardHeader>
+            <CardContent className="pb-4 pt-0 text-muted-foresrc/Appground">
+              .tsx">
+import {<p>Абонем Toaster } from "@/components/ui/toaster";
+import {ент на 4 занятия действителен в течение 1 Toaster as месяца, абонемент на Sonner } from "@/components/ui/sonner";
+import { 8 занятий — в течение 2 месяцев с момента первого занятия.</p>
+             TooltipProvider } from "@/components/ui/tooltip";
+import {</CardContent>
+          </Card>
+           QueryClient, QueryClientProvider<Card>
+            <CardHeader className=" } from "@tanstack/react-query";py-4">
+              <CardTitle className
+import { BrowserRouter,="text-base font Routes, Route } from "-medium">Возreact-router-domможно ли отменить или перен";
+import Index from "./pages/ести занятие?</CardTitle>
+            </CardHeader>
+            <CardContentIndex";
+import NotFound from "./pages/NotFound";
+import className="pb-4 pt-0  About from "./pages/Abouttext-muted-foreground">
+              ";
+import Teachers from "./pages/Teachers<p>Да, вы можете";
+import TeacherDetail from "./pages/Te перенести занятие,acherDetail"; предупредив нас
+import Prices from "./pages/Prices"; не менее чем за
+import VocalExercises from "./pages 24 часа/VocalExercises";
+import Profile. В случае отмены from "./pages/Profile"; занятия менее чем за 24 часа о
+
+const queryClient = new QueryClient();
+
+const App = () => (но считается проведенным
+  <QueryClientProvider client={queryClient.</p>
+            </CardContent>
+          </Card>}>
+    <TooltipProvider>
+          <Card>
+            <CardHeader className
+      <Toaster />="py-4">
+              <CardTitle
+      <Sonner />
+       className="text-base font-medium"><BrowserRouter>
+        <Routes>Сколько времени н
+          <Route path="/" element={<Index />} />
+          <Route path="/aboutужно, чтобы ув" element={<Aboutидеть прогресс? />} />
+          </CardTitle>
+            <Route path="/teachers</CardHeader>
+            <CardContent className" element={<Teachers />} />
+          ="pb-4 pt-0 text<Route path="/teachers/:id" element={-muted-fore<TeacherDetail />} />
+          ground">
+              <p>Перв<Route path="/prices" element={ые результаты обычно<Prices />} />
+          <Route path="/ заметны уже черезvocal-exercises" element={<VocalExercises />} />
+          <Route path 2-3 нед="/profile" element={<Profile />} />ели регулярных занятий (при условии вы
+          <Route path="*" element={полнения домашних заданий).<NotFound />} />
+        </Routes Для значительного прогрес>
+      </BrowserRouter>
+    са и освоения техники</TooltipProvider>
+  </Query требуется от 3 до 6 месяClientProvider>
+);
+
+export default App;цев.</p>
+            </CardContent
